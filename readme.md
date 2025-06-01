@@ -36,6 +36,57 @@ original_char = (ord(ciphertext[i]) - ord(key[i]) - i) % 256
 
 ---
 
+## 📊 Algorithm Steps
+
+### 🔸 Encryption Algorithm (`TwistCipher_Encrypt`)
+
+**Input**:
+- `plaintext` (string)
+- `key` (string)
+
+**Output**:
+- `ciphertext` (string)
+
+```text
+1. Initialize an empty list: cipher = []
+2. Create a repeating key sequence the same length as plaintext:
+      key_sequence = repeat key until its length equals length of plaintext
+3. For each character index i in plaintext (0 to length-1):
+      a. Convert plaintext[i] and key_sequence[i] to ASCII values
+      b. Calculate:
+         encrypted_char = (ord(plaintext[i]) + ord(key_sequence[i]) + i) mod 256
+      c. Convert encrypted_char back to character and append to cipher list
+4. Join cipher list into a single string
+5. Return the final ciphertext
+```
+
+### 🔹 Decryption Algorithm (`TwistCipher_Decrypt`)
+
+**Input**:
+- `ciphertext` (string)
+- `key` (string)
+
+**Output**:
+- `plaintext` (string)
+
+```text
+1. Initialize an empty list: plaintext = []
+2. Create a repeating key sequence the same length as ciphertext:
+      key_sequence = repeat key until its length equals length of ciphertext
+3. For each character index i in ciphertext (0 to length-1):
+      a. Convert ciphertext[i] and key_sequence[i] to ASCII values
+      b. Calculate:
+         decrypted_char = (ord(ciphertext[i]) - ord(key_sequence[i]) - i) mod 256
+      c. Convert decrypted_char back to character and append to plaintext list
+4. Join plaintext list into a single string
+5. Return the original plaintext
+```
+
+---
+
+
+---
+
 ## 💻 Python Implementation
 ```python
 def encrypt_twistcipher(plaintext, key):
