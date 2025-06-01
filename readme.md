@@ -2,7 +2,7 @@
 
 ## Submitted By: Abdur Razzak
 ## Subject: Mathematical Analysis for Computer Science
-## Instructor's Name :Pankaj Bhowmik(Lecturer)
+## Submitted To: Pankaj Bhowmik(Lecturer)
 
 ## 🔒 Overview
 **TwistCipher** is a simple, symmetric key encryption algorithm developed for educational purposes. It combines character position, ASCII values, and a user-defined key to perform encryption and decryption. This cipher helps beginners understand how encryption logic works.
