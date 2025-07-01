@@ -124,3 +124,6 @@ print("Decrypted:", original)  # Output: HelloWorld!
 The test case confirms successful round-trip encryption and decryption, validating the algorithm's correctness.
 
 # Flow Chart 
+<p align="center">
+  <img src="./flowchar.jpg" alt="flow chart" width="150">
+</p>
