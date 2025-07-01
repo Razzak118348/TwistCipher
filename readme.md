@@ -125,5 +125,5 @@ The test case confirms successful round-trip encryption and decryption, validati
 
 # Flow Chart 
 <p align="center">
-  <img src="./flowchar.jpg" alt="flow chart" width="150">
+  <img src="./flowchar.png" alt="flow chart" width="150">
 </p>
